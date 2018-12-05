@@ -1,0 +1,39 @@
+{
+  "name": "comet-js",
+  "version": "1.0.0",
+  "description": "a lightweight library for implementing comet in JavaScript",
+  "main": "comet.all.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src/comet.js -o comet.all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleen42/comet.js.git"
+  },
+  "keywords": [
+    "comet"
+  ],
+  "author": "aleen42 <aleen42@vip.qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aleen42/comet.js/issues"
+  },
+  "homepage": "https://github.com/aleen42/comet.js#readme",
+  "devDependencies": {
+    "@babel/cli": "7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "transform-es3-member-expression-literals"
+    ]
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
